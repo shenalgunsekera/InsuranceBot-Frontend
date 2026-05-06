@@ -61,6 +61,13 @@ export interface Stats {
   current_model: string
 }
 
+export interface ModelStatus {
+  available: boolean
+  current_model: string
+  installed_models: string[]
+  provider: string
+}
+
 export interface ChatMessage {
   id: string
   role: 'user' | 'assistant'
